@@ -1,0 +1,1 @@
+This is repo of my notes for Max's Udemy course to learn Node Js. [NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)](https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/11738854#overview)
