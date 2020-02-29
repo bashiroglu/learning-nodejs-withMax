@@ -15,6 +15,12 @@ const editMode = req.query.edit; // not in body
 we also use query param to request different routes
 
 ```
-<form class="product-form" action="/admin/<% if (editing) 
+<form class="product-form" action="/admin/<% if (editing)
 { %>edit-product<% } else { %>add-product<% } %>" method="POST"> //engine code
+```
+
+when we use html form to delete something, in oreder to add extra data to our body we use hidden input, as below:
+
+```
+<input type="hidden" value="<%= product.id %>" name="productId">
 ```
