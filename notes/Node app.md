@@ -24,3 +24,19 @@ when we use html form to delete something, in oreder to add extra data to our bo
 ```
 <input type="hidden" value="<%= product.id %>" name="productId">
 ```
+
+- If we want to use, mysql in node app, we need to config first as below:
+
+```
+const mysql = require('mysql2');
+
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  database: 'node-complete',
+  password: 'password'
+});
+
+module.exports = pool.promise();// we return promise 
+```
+Then we can consume this promise to get extract data.
